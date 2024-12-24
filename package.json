@@ -3,10 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://MustafaAhmadov.github.io/pashabankhackathon", 
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -30,6 +33,7 @@
     "@vitejs/plugin-react": "^3.1.0",
     "eslint": "^8.38.0",
     "eslint-config-react-app": "^7.0.1",
+    "gh-pages": "^6.2.0",
     "typescript": "^4.9.3",
     "vite": "^4.2.0"
   }
